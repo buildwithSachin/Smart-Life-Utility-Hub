@@ -1,2 +1,2 @@
-# Smart-Life-Utility-Hub
-this is a multi-calculator
+# Smart-Utility-Hub
+Smart Utility Hub is a web application developed using HTML, CSS and JavaScript.

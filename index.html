@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Life Utility Hub</title>
+
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+
+<nav class="navbar">
+   <div class="logo">Smart Utility Hub</div>
+
+   <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+   </div>
+</nav>
+
+<header>Smart Life Utility Hub</header>
+<nav>
+  <button onclick="show('bmi', this)">BMI</button>
+  <button onclick="show('interest', this)">Interest</button>
+  <button onclick="show('age', this)">Age</button>
+  <button onclick="show('grade', this)">Grade</button>
+  <button onclick="toggleMode()">🌙</button>
+</nav>
+
+<div class="container">
+
+<img id="banner" src="ChatGPT Image May 3, 2026, 07_41_54 PM.png">
+
+<!-- BMI -->
+<div id="bmi" class="section">
+  <h3>BMI Calculator</h3>
+  <input id="h" type="number" placeholder="Height (cm)">
+  <input id="w" type="number" placeholder="Weight (kg)">
+  <button class="calc" onclick="bmi()">Calculate</button>
+  <div id="bmiRes" class="result"></div>
+</div>
+
+<!-- Interest -->
+<div id="interest" class="section">
+  <h3>Interest Calculator</h3>
+  <input id="p" type="number" placeholder="Principal (₹)">
+  <input id="r" type="number" placeholder="Rate (%)">
+  <input id="t" type="number" placeholder="Time (years)">
+  <button class="calc" onclick="interest()">Calculate</button>
+  <div id="intRes" class="result"></div>
+</div>
+
+<!-- Age -->
+<div id="age" class="section">
+  <h3>Age Calculator</h3>
+  <input type="date" id="dob">
+  <button class="calc" onclick="calculateAge()">Calculate</button>
+  <div id="ageRes" class="result"></div>
+</div>
+
+<!-- Grade -->
+<div id="grade" class="section">
+  <h3>Grade Calculator</h3>
+  <input id="marks" type="number" placeholder="Marks obtained">
+  <input id="total" type="number" placeholder="Total marks">
+  <button class="calc" onclick="grade()">Calculate</button>
+  <div id="gradeRes" class="result"></div>
+</div>
+
+</div>
+
+<h4 class="p">---developed by Rajat & Sachin</h4>
+
+<script src="script.js"></script>
+
+</body>
+</html>
